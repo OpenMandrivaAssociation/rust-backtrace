@@ -5,8 +5,8 @@
 %global crate backtrace
 
 Name:           rust-%{crate}
-Version:        0.3.40
-Release:        2%{?dist}
+Version:        0.3.60
+Release:        1
 Summary:        Library to acquire a stack trace (backtrace) at runtime in a Rust program
 
 # Upstream license specification: MIT/Apache-2.0
@@ -258,76 +258,3 @@ which use "unix-backtrace" feature of "%{crate}" crate.
   %cargo_test
 %endif
 %endif
-
-%changelog
-* Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.40-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
-
-* Mon Dec 16 2019 Josh Stone <jistone@redhat.com> - 0.3.40-1
-- Update to 0.3.40
-
-* Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.30-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
-
-* Sat Jun 22 09:21:35 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.3.30-2
-- Regenerate
-
-* Tue Jun 04 2019 Josh Stone <jistone@redhat.com> - 0.3.30-1
-- Update to 0.3.30
-
-* Mon Jun 03 2019 Josh Stone <jistone@redhat.com> - 0.3.28-1
-- Update to 0.3.28
-
-* Sat Jun 01 2019 Josh Stone <jistone@redhat.com> - 0.3.26-1
-- Update to 0.3.26
-
-* Wed May 15 08:23:12 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.3.16-1
-- Update to 0.3.16
-
-* Fri Apr 05 2019 Josh Stone <jistone@redhat.com> - 0.3.15-1
-- Update to 0.3.15
-
-* Sun Mar 10 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.3.14-2
-- Do not pull optional dependencies
-
-* Tue Feb 19 2019 Josh Stone <jistone@redhat.com> - 0.3.14-1
-- Update to 0.3.14
-
-* Sat Feb 02 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.13-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
-
-* Thu Jan 10 2019 Josh Stone <jistone@redhat.com> - 0.3.13-1
-- Update to 0.3.13
-
-* Thu Dec 20 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.3.12-2
-- Run tests in infrastructure
-
-* Wed Dec 12 2018 Josh Stone <jistone@redhat.com> - 0.3.12-1
-- Update to 0.3.12
-
-* Fri Nov 02 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.3.9-3
-- Adapt to new packaging
-
-* Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.9-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
-
-* Fri Jun 29 2018 Josh Stone <jistone@redhat.com> - 0.3.9-1
-- Update to 0.3.9
-
-* Wed May 23 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.3.8-1
-- Update to 0.3.8
-
-* Fri May 04 2018 Josh Stone <jistone@redhat.com> - 0.3.7-1
-- Update to 0.3.7
-
-* Sat Apr 14 2018 Josh Stone <jistone@redhat.com> - 0.3.6-1
-- Update to 0.3.6
-
-* Fri Feb 09 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.5-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
-
-* Mon Jan 08 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.3.5-2
-- Rebuild for rust-packaging v5
-
-* Thu Jan 04 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.3.5-1
-- Initial package
