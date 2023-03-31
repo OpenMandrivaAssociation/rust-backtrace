@@ -6,7 +6,7 @@
 
 Name:           rust-%{crate}
 Version:        0.3.60
-Release:        1
+Release:        2
 Summary:        Library to acquire a stack trace (backtrace) at runtime in a Rust program
 
 # Upstream license specification: MIT/Apache-2.0
